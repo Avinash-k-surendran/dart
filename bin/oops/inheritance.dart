@@ -19,6 +19,6 @@ class Amal extends Students{
 void main(){
 
   Amal obj = Amal();
-  obj.show("Avinash", "aviavinashk2002Agmail.com",8281385318);
+  obj.show("Avinash", "aviavinashk2002@gmail.com",8281385318);
   obj.course("python");
 }
