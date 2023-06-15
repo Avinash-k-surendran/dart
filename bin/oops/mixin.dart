@@ -6,22 +6,22 @@
 
 
 mixin A{
-  int a = 10;
+  int? a;
   void show(){
     print("inside show functions"); // normal function
   }
 }
 mixin B{
-  int b = 20;
+  int? b;
   void add(); ///abstract function
 }
 
 class C with A ,B {
-  int c = 30;
+  int? c;
 
   @override
   void add() {
-    print("sum = ${a + b + c}");
+    print("sum = ${(a =10)+ (b = 20)+(c = 30)}");
   }
 }
 void main(){

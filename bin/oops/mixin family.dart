@@ -1,4 +1,3 @@
-import 'mixin.dart';
 
 mixin Father{
   String fname = "surendran";
