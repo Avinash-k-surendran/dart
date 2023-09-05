@@ -1,24 +1,25 @@
-class Students {
+class Parent{
   String? name;
+  int? age;
   String? email;
   int? phone;
+///  String? course;
 
-
-  void course(String course) {
-    print("studying $course at luminar");
+void course(String course){
+  print("course is $course at luminar");
+}
+}
+class Child extends Parent{
+  void show(String n, int a, String e, int p){
+    print("name is $n");
+    print("age is $a");
+    print("email is $e");
+    print("phone is $p");
+///    print("course is $c");
   }
 }
-class Amal extends Students{
-  void show(String n , String e, int p){
-    print("name = ${name = n}");
-    print("email = ${email = e}");
-    print("phone = ${phone = p}");
-  }
-}
-
-void main(){
-
-  Amal obj = Amal();
-  obj.show("Avinash", "aviavinashk2002@gmail.com",8281385318);
+void main (){
+  Child obj = Child();
+  obj.show("avinash ks", 21, "aviavinashk2002@gmail.com", 8281385318);
   obj.course("python");
 }

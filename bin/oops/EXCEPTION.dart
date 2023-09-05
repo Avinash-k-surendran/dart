@@ -16,7 +16,7 @@ try{
   ///               -> it will execute in any situation
   ///                  if exception occured not handled
   ///                  if exception occured and it is handled
-  ///                  if there is no exception
+  ///                  if there is no exception
   print("this block should work always");
 }
   print("thank you");

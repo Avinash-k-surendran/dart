@@ -1,56 +1,47 @@
 class Family{
-
   String fname="Surendran k";
-  int fage = 58;
-  String fjob = "retere from gov";
-  String mname="baby valsala cn";
-  int mage = 48;
+  int fage =57;
+  String fjob ="retaire from gov";
+  String mname = "babyvalsala cn";
+  int mage = 47;
   String mjob = "gov";
 
-  void showfamilyDetails(){
-    print("Father's name is $fname");
-    print("Father's age is $fage");
-    print("Father's job is $fjob");
-    print("mother's name is $mname");
-    print("mother's age is $mage");
-    print("mother's job is $mjob");
+  void familydetails(){
+    print("name is $fname");
+    print("age at $fage");
+    print("job is $fjob");
+    print("name is $mname");
+    print("age at $mage");
+    print("job is $mjob");
   }
 }
-
-class Myself extends Family {
-  String name = "Avinash";
+class Myself extends Family{
+  String name = "AVINASH KS";
   int age = 21;
-  String email = "aviavinashk2002@gmail.com";
-  String course = "Flutter";
+  String study = "flutter";
 
-  void show() {
+  void myself(){
     print("name is $name");
-    print("age is $age");
-    print("email is $email");
-    print("course is $course");
+    print("age at $age");
+    print("study is $study");
   }
 }
+class Brother extends Family {
+  String bname = "ASHWIN DEV KS";
+  int bage = 26;
+  String bstudy = "PSC";
 
-  class Brother extends Family{
-    String name = "Ashwin dev";
-    int age = 26;
-    String email = "ashwindevachu@gmail.com";
-    String course ="nothing";
-
-
-  void show(){
-    print("name is $name");
-    print("age is $age");
-    print("email is $email");
-    print("course is $course");
+  void brotherhood(){
+    print("name is $bname");
+    print("age at $bage");
+    print("study is $bstudy");
   }
-  }
-  void main(){
-    Myself obj = Myself();
-    obj.show();
-    obj.showfamilyDetails();
-    Brother obj1 = Brother();
-    obj1.show();
-    obj1.showfamilyDetails();
 
-  }
+}
+void main(){
+  Myself obj = Myself();
+  obj.myself();
+  obj.familydetails();
+  Brother obj1 = Brother();
+  obj1.brotherhood();
+}

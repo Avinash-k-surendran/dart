@@ -1,6 +1,8 @@
+import 'dart:io';
+
 void main() {
   print("welcome");
-  int age = 19;
+  int age = 17;
 
   if (age >= 18) {
     print("you are eligible");
